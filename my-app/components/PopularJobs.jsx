@@ -23,12 +23,12 @@ const styles = StyleSheet.create({
 jobCard: {
 height: 75,
 width: 350,
-top:200,
+top:75,
 borderRadius: 12,
 marginRight: 15,
 padding: 15,
 backgroundColor:'#ffffff',
-marginBottom:15,
+marginBottom:8,
 },
 jobCardImage: {
 height: 46,
@@ -42,10 +42,6 @@ height: 30,
 width: 30,
 alignSelf: 'center',
 marginTop: 8,
-},
-jobBox: {
-marginBottom:20,
-marginLeft:55,
 },
 section:{
 flexDirection:'row',
@@ -73,8 +69,7 @@ marginLeft:55,
 company:{
 fontSize: 13,
 fontWeight: '400',
-color: '#0D0D26',
-
+color: '#0D0D26'
 },
 location:{
 fontSize: 13,

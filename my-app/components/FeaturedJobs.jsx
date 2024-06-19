@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FeaturedJobs({job}) {
   return (
-    <View style={styles.facebookBox}>
+    <View  style={[styles.facebookBox, { backgroundColor: job.backgroundColor }]}>
         <View style={styles.logo}>
            <Image source={job.icon} style={styles.facebookIcon}/>
         </View>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         left:20,
     },
     facebookBox:{
-        top: 100,
+        top: 80,
         width:280,
         height:186,
         borderRadius:24,
