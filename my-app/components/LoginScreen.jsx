@@ -15,8 +15,17 @@ export default function LoginScreen({navigation}) {
        <Text style={styles.text}>Let’s log in. Apply to jobs!</Text>
        <View style={styles.inputBox}>
         <View>
-            <TextInput placeholder='Name'  style={styles.input}/>
-            <TextInput placeholder='Email' style={styles.input}/>
+            <TextInput
+            value={name}
+            onChangeText={setName}
+            placeholder='Name'
+            style={styles.input}
+            />
+            <TextInput
+            value={email}
+            onChangeText={setEmail}
+            placeholder='Email'
+            style={styles.input}/>
         </View>
         <Pressable style={styles.button} onPress={handleLogin}>
             <Text style={styles.buttonText}>Log In</Text>
